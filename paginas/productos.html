@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lagom - Productos</title>
+    <link rel="shortcut icon" href="../multimedia/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../estilos/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Birthstone+Bounce:wght@400;500&family=Cedarville+Cursive&family=Gothic+A1:wght@300;400;800&family=Handlee&family=Klee+One:wght@400;600&family=Leckerli+One&family=Lily+Script+One&family=Nanum+Gothic:wght@400;700;800&family=Palanquin+Dark:wght@400;500;600;700&family=Palanquin:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body>
+    <!--Encabezado presente en todas las páginas del sitio, excepto index, cambia el logo-->
+    <header>
+        <div class="header-logo">
+            <a href="../index.html"><img src="../multimedia/logo.png" alt="Logo Lagom"
+                    class="header-logo__image"></a>
+            <!--redimensionar esta imagen por el logo-->
+        </div>
+        <div class="header-menu">
+            <nav class="navegacion">
+                <ul class="menu">
+                    <li>
+                        <a href="../index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="productos.html">Productos</a>
+                    </li>
+                    <li>
+                        <a href="mi_cuenta.html">Mi Cuenta</a>
+                    </li>
+                    <li>
+                        <a href="galeria.html">Galería</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--Fin del encabezado-->
+
+    <h1 class="mensajePagina">Nuestros Productos</h1>
+
+    <h3 id="tituloTabla" class="tituloTabla">Catálogo</h3>
+    <section class="tablaProductos">
+        <table class="detalleProducto">
+            <th class="encabezados">Producto</th>
+            <!-- "Encabezado tabla" -->
+            <th class="encabezados">Imagen</th>
+            <th class="encabezados">Categoría</th>
+            <th class="encabezados">Colores</th>
+            <th class="encabezados">Descripción</th>
+            <th class="encabezados">Precio</th>
+            <!--Fin encabezado tabla-->
+            <tr class="anotadorReciclado">
+                <td>Anotador</td>
+                <td><img src="../multimedia/_DSC0043-1.jpeg" alt="anotadorDeflores" class="miniaturaProducto"></td>
+                <td>Librería</td>
+                <td>
+                    <select>
+                        <option value="">Flores</option>
+                        <option value="">Rosas</option>
+                        <option value="">Tigre</option>
+                    </select>
+                </td>
+                <td>
+                    <h5>Características</h5>
+                    <ul>
+                        <li>Hecho con papel reciclado.</li>
+                        <li>Personalizables.</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="elegirProducto">
+                        <li class="precioProducto">$ 750,00
+                        </li>
+                        <li><input placeholder="Cantidad" type="number" class="cantidadElegida" name="" id="" min="1"
+                                max="10">
+                        </li>
+                        <li><a href="#">Comprar</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Billeteras</td>
+                <td><img src="../multimedia/_DSC7469-1.jpeg" alt="billetera" class="miniaturaProducto">
+                </td>
+                <td>Textil</td>
+                <td>
+                    <select>
+                        <option value="">Flores</option>
+                        <option value="">Rosas</option>
+                        <option value="">Tigre</option>
+                    </select>
+                </td>
+                <td>
+                    <h5>Instrucciones de lavado</h5>
+                    <ol>
+                        <li>Retira cualquier contenido (etiquetas, servilletas, etc).</li>
+                        <li>Dá vuelta a la prenda para que el exterior quede hacia adentro.</li>
+                        <li>Lava con agua fría a mano o ciclo delicado en máquina.</li>
+                        <li>No usar suavizantes.</li>
+                        <li>Secar al sol con el interior hacia afuera para preservar los colores.</li>
+                    </ol>
+                </td>
+                <td>
+                    <ul class="elegirProducto">
+                        <li class="precioProducto">$ 1200,00</li>
+                        <li><input type="number" class="cantidadElegida" min="1" max="10" id="" placeholder="Cantidad">
+                        </li>
+                        <li><a href="#">Comprar</a></li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <footer>
+        <div>
+            <p>Lagom Estudio - Derechos Registrados</p>
+            <p>Desarrollado por: Rosenrot3585 2022</p>
+        </div>
+        <div>
+            <p class="followUs">Síguenos: </p>
+            <!--Redes Sociales-->
+            <nav class="social-Network">
+                <ul class="menu" name="socialnetwork">
+                    <li>
+                        <a href="https://www.linkedin.com/in/mcmp3585"><img src="../multimedia/LI-In-Bug.png"
+                                alt="LI provisorio"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/challenge/?next=/%253Fhl%253Des"><img
+                                src="../multimedia/Instagram_Glyph_Gradient_RGB.png" alt="IG provisorio"></a>
+                    </li>
+                    <li>
+                        <a href="https://es-la.facebook.com/"><img src="../multimedia/f_logo_RGB-Blue_100.png"
+                                alt="FB provisorio"></a>
+                    </li>
+                    <li>
+                        <a href="https://ar.pinterest.com/"><img src="../multimedia/P-Badge-Pushpin-Red-450.png"
+                                alt="P provisorio"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>

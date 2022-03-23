@@ -1,0 +1,665 @@
+/*RESET*/
+
+/*HTML STYLES*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border:0;
+}
+
+html{
+    font-size: 62.5%; /* cambiamos la etiqueta raiz, y ahora se cuenta de 10px en 10px. */
+    /*background-color: #b7b694;*/
+    /*background-color:  #b7b6941a;*/
+    /*background-color: #4ec2c6d2;*/ 
+}
+
+.homeBody{
+    /*background-color:#b7b694;*/
+    background-image: 
+        url(../multimedia/linen_grey.jpg);
+    background-repeat:repeat-x repeat-y;
+    background-size: auto;
+    display:grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 0.2fr 2fr 2fr 2fr 0.2fr;
+    grid-template-areas:
+    "headerInd headerInd headerInd"
+    "mainIn mainIn mainIn"
+    "mainIn mainIn mainIn"
+    "mainIn mainIn mainIn"
+    "footerIn footerIn footerIn";
+}
+.body--noHome{
+    /*background-color:#b7b694;*/
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 0.2fr 3fr 0.2fr;
+    grid-template-areas:
+    "headerInd headerInd headerInd"
+    "mainNoH mainNoH mainNoH"
+    "footerIn footerIn footerIn";
+}
+header{
+    grid-area: headerInd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 1rem;
+    position: sticky;
+    width:100%;
+    top:0;
+    height:9rem;
+    z-index: 9999;
+    background-color:  #b7b694;
+}
+.header-logo__image{
+    margin-left: 100px;
+    width:10rem;
+    height: 5rem;
+}
+.header-logo__image--animated {
+    animation: jackInTheBox; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 3s; /* don't forget to set a duration! */
+    margin-left: 100px;
+    width:10rem;
+    height: 5rem;
+}
+.header-login{
+    position: fixed;
+    top: 15px;
+    right: 110px; 
+}
+.header-login__LinkImg{
+    width: 1.2rem;
+    height: 1.2rem; 
+}
+.header-menu{
+    align-self:center;
+    justify-items: center;
+}
+footer{
+    grid-area: footerIn;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #000000;
+    size-adjust: 100%;
+    color: #b7b694;
+    padding: 1.5rem;  
+    width:100%;
+}
+
+
+
+/*HEADER STYLE*/
+
+.menu li{
+    font-family: 'Nanum Gothic', sans-serif;
+    display: inline-block;
+    position: relative;  
+    font-size: 2rem; 
+}
+.menu li a:hover{
+    background-color: #d34a4583;
+    background-size: 1.2rem;
+    color:#b7b694; 
+    font-weight: bold;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #C1433F;
+    margin: 0 0.5rem 0 0.5rem;
+}
+
+.loginLink{
+    position: fixed;
+    top: 15px;
+    right: 110px;   
+}
+
+.loginLinkImg{
+    width: 1.2rem;
+    height: 1.2rem;    
+}
+
+body{
+    /*background-color: C1433F41;*/
+	font-size:100%;
+	line-height: 1.3;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: justify;
+}
+.homeBody__main{
+    grid-area: mainIn;
+}
+.noHomeBody-mainContact{
+    grid-area: mainNoH;
+    background-color: #4EC2C6;
+}
+.noHomeBody-mainNosotros{
+    grid-area: mainNoH;
+    background-color:#d34a4531;
+}
+.nuestraHistoria{
+    background-image: url(../multimedia/coser.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 2rem;
+}
+.nuestrasCategorias{
+    background-image: url(../multimedia/coser2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 2rem;
+}
+.textoNosotros{
+    background-color: white;
+    opacity: 0.6;
+	width: auto;
+    padding: 1rem 3rem;
+}
+.textoNosotros p{
+    text-indent: 2rem;
+    font-size: 2rem;
+	margin: 1rem;
+    padding:1rem 2rem;
+    font-weight: bold;
+    color: #000000;
+    text-align: justify;
+    opacity: 1;
+}
+.textoNosotros ul li{
+    text-indent: 2rem;
+    font-size: 2rem;
+    font-weight: 1000;
+    color: #000000;
+    text-decoration:underline;
+}
+.textoNosotros ul li p{
+    text-indent: 2rem;
+    font-size: 2rem;
+    font-weight: 1000;
+    color: #000000;
+    text-decoration:none;
+}
+.textoNosotros h3{
+    font-size: 5rem;
+	text-align: center;
+    font-weight: bold;
+    color: #000000;
+}
+.categorias{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.categorias-textil{
+    display: flex;
+    flex-direction: row;
+}
+.categorias-papel{
+    display: flex;
+    flex-direction: row;
+}
+.grid-gallery{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3,25rem);
+    grid-template-rows: repeat(4,10rem);
+    grid-template-areas:
+        "item1 item2 item2"
+        "item3 item4 item7"
+        "item5 item6 item11"
+        "item8 item9 item10";
+    height: auto;
+    width: auto;
+    overflow: hidden;
+    margin: 5rem;
+    gap: 1.5rem;
+}
+.grid-gallery div{
+width: 100%;
+height: auto;
+overflow: hidden;
+}
+.grid-gallery div img{
+width: 100%;
+height: auto;
+}
+.noHomeBody-mainGallery{
+    grid-area: mainNoH;
+    background-color:silver;
+}
+.grid-gallery-item1{
+    grid-area: item1;
+}
+.grid-gallery-item2{
+    grid-area: item2;
+}
+.grid-gallery-item3{
+    grid-area: item3;
+}
+.grid-gallery-item4{
+    grid-area: item4;
+}
+.grid-gallery-item5{
+    grid-area: item5;
+}
+.grid-gallery-item6{
+    grid-area: item6;
+}
+.grid-gallery-item7{
+    grid-area: item7;
+}
+.grid-gallery-item8{
+    grid-area: item8;
+}
+.grid-gallery-item9{
+    grid-area: item9;
+}
+.grid-gallery-item10{
+    grid-area: item10;
+}
+.grid-gallery-item11{
+    grid-area: item11;
+}
+.mensajePagina{
+    height: auto;
+    font-family:'Nanum Gothic', sans-serif;
+    margin: 2.5rem;
+    text-align: center;
+    font-size: 3rem;
+    animation: rotateIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 3s; /* don't forget to set a duration! */
+}
+
+.lagomBold{
+    font-family: 'Lily Script One', cursive;
+    font-size: 2.2rem;
+}
+
+
+
+
+.parallax {margin:0 auto}
+
+.parallax{
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:  cover;
+	height:40rem;
+	max-width: 100%;
+	position: relative
+}
+.parallax__titulo{
+	color:#d34a45;
+	font-size: 5rem;
+	left: 10%;
+	position: absolute;
+	text-align: center;
+	top:30%;
+	width: 80%;
+    font-family: 'Lily Script One', cursive;
+    /*font-family: 'Palanquin Dark', sans-serif;*/
+    font-weight: 800;
+    text-shadow: 0px 0.5rem 0.5rem #000000;
+
+}
+
+.img-uno{background-image: url("../multimedia/parallax_mask.jpeg")}
+
+.img-dos{background-image: url("../multimedia/Parallax_planner.jpeg")}
+
+.img-tres{background-image: url("../multimedia/Parallax.jpeg")}
+
+.parallax__texto p{
+    text-indent: 2rem;
+    font-size: 2rem;
+	margin: 2rem
+}
+.parallax__texto{
+    padding: 4% 25%;
+	width: auto;
+}
+
+.dondeEstamos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 5%;
+    width: auto;
+    text-align: center;
+}
+
+.dondeEstamos img{
+    height: 150px;
+    width: 200px;
+}
+
+
+
+footer div p{
+    font-size: 1.1rem; 
+
+}
+.followUs{
+    position: relative;
+    top: 1.5rem;
+    right: 5rem;
+}
+.social-Network ul{
+    display: inline-block;
+}
+
+.social-Network ul li a img{
+    width: 24px;
+    height: 24px;
+    }
+
+    /*revisar porque no se fija dnde se quiere cuando se usa top o bottom*/
+    
+/*CSS que sólo está en pagina productos*/
+.tablaProductos{
+    display: block;
+    padding: 5px;
+    margin: 0rem  10rem;
+}
+.detalleProducto{
+font-size: 1.5rem;
+margin: 0.2rem;
+padding:0.2rem;
+width: 100%;
+}
+.detalleProducto th {
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-align: center;
+    color: #b7b694;
+    font-weight: bold;
+
+}
+.encabezados{
+background-color: #C1433F;
+height: auto;
+padding: 0;
+text-shadow: 0px 2px 5px #000000;
+}
+.detalleProducto tr td {
+    padding: 0.8rem;
+}
+
+.miniaturaProducto{
+    height:15rem;
+    width: 15rem;
+}
+.elegirProducto{
+    list-style-type: none;
+    text-align: center;
+}
+
+.precioProducto{
+    font-size: 2rem;
+}
+.cantidadElegida{
+    width: 8rem;
+    background-color: aliceblue;
+    height: 1.8rem;
+    text-align: center;
+}
+
+.tituloTabla{
+    display: block;
+    color:#d34a45;
+	font-size: 5rem;
+	text-align: center;
+	font-family: 'Lily Script One', cursive;
+    font-style: bold;
+    font-weight: 800;
+    text-shadow: 0px 2px 5px #000000;
+    margin: 2rem;
+}
+.botonMiCuenta{
+    border-radius: 1rem;
+    width: 24rem;
+    height:5rem;
+    font-size: 2rem;
+    margin: 2rem;
+}
+.botonMiCuenta:hover{
+    border-radius: 1rem;
+    background-color:#C1433F;
+    color: #b7b694;
+    width: 24rem;
+    height:5rem;
+    font-size: 2rem;
+}
+.textoContacto{
+    text-align: center;
+}
+.textoContacto p{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 2rem;
+}
+.formularioDeContacto{
+    font-size: 1.5rem;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    background-color:#4E9AC6;
+}
+.formularioDeContacto div{
+    width: 100%;
+    font-weight: bold;
+}
+.formularioDeContacto textarea{
+    font-size: 2rem;
+    padding: 1rem;
+    width: 80%;
+    margin: 2rem;
+}
+.formularioDeContacto h5{
+    font-size: 2rem;
+    padding: 1.5rem;
+    width: 100%;
+
+}
+.newsletter{
+    font-size: 1.2rem;
+    font-weight: normal;
+    text-align: center;
+    color: darkgrey;
+}
+.motivoConsulta{
+    margin-top: 5rem;
+    padding: 1rem;
+}
+.labelMotivoConsulta{
+    margin-top: 5rem;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 768px){ 
+    .homeBody{
+        display:grid;
+        grid-template-columns: 2fr 0.2fr;
+        grid-template-rows: 0.2fr 2fr 2fr 2fr 0.2fr;
+        grid-template-areas:
+        "headerInd headerInd"
+        "mainIn mainIn"
+        "mainIn mainIn"
+        "mainIn mainIn"
+        "footerIn footerIn";
+    }
+    header{
+        grid-area: headerInd;
+        display: flex;
+        align-content: space-between;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .header-logo__image--animated {
+        animation: jackInTheBox; /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 3s; /* don't forget to set a duration! */
+        width:8rem;
+        height: 4rem;
+        margin: 0px;
+    }
+    .header-logo__image{
+        width: 8rem;
+        height: 4rem;
+        margin: 0px;
+    }
+    .header-menu{
+        justify-items: stretch;
+        flex-wrap: nowrap;
+    }
+    .menu li{
+        font-size: 1.8rem;
+    }
+    .mensajePagina{
+        height: fit-content;
+        font-family: 'Lily Script One', cursive;
+        margin: 2.5rem;
+        text-align: center;
+        font-size: 2rem;
+    }
+    /* HOLA MOOOR! te dejo un comentario ;) */
+    .parallax{
+        overflow:hidden;
+	    background-attachment: fixed;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size:  cover;
+	    height:20rem;
+	    max-width: 100%;
+	    position: relative;
+        align-content: center;
+        justify-content: center;
+    }
+    .parallax__titulo{
+	    color:#d34a45;
+	    font-size: 2.5rem;
+	    text-align: center;
+	    top:30%;
+        font-family: 'Lily Script One', cursive;
+        /*font-family: 'Palanquin Dark', sans-serif;*/
+        font-style: bold;
+        font-weight: 800;
+        text-shadow: 0px 0.2rem 0.5rem #000000;
+    }
+    
+    .parallax__texto p{
+        font-size: 1.5rem;
+        font-weight: 800;
+        /*text-shadow: 0px 0.5rem 5.5rem silver;*/
+    }
+    .parallax__texto {
+        padding: 5%;
+    }
+
+    .lagomBold{
+        font-family: 'Lily Script One', cursive;
+        font-size: 1.7rem;
+    }
+    .dondeEstamos{
+        display: grid;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+        width: auto;
+        row-gap: 5vh;
+    }
+    .dondeEstamos__image {
+        width: 200px;
+        height: 150px;
+    }
+
+    .dondeEstamos div p{
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+        color: #d34a45;
+        font-weight: bold;
+        text-shadow: 0px 0.2rem 0.5rem #000000;
+    }
+}
+@media screen and (max-width: 480px){ 
+    .menu li{
+        font-size: 1.2rem;}
+    .mensajePagina{
+        height: fit-content;
+        font-family: 'Lily Script One', cursive;
+        margin-top: 2.5rem;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    
+    .parallax{
+        overflow:hidden;
+	    background-attachment: fixed;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size:  cover;
+	    height:20rem;
+	    max-width: 100%;
+	    position: relative;
+        align-content: center;
+        justify-content: center;
+    }
+    .parallax__titulo{
+	    color:#d34a45;
+	    font-size: 2.5rem;
+	    text-align: center;
+	    top:30%;
+        font-family: 'Lily Script One', cursive;
+        /*font-family: 'Palanquin Dark', sans-serif;*/
+        font-style: bold;
+        font-weight: 800;
+        text-shadow: 0px 0.2rem 0.5rem #000000;
+    }
+    
+    .parallax__texto p{
+        font-size: 1.5rem;
+        font-weight: 800;
+        /*text-shadow: 0px 0.5rem 5.5rem silver;*/
+        font-family:'Nanum Gothic', sans-serif;
+    }
+   
+    .lagomBold{
+        font-family: 'Lily Script One', cursive;
+        font-size: 1.7rem;
+    }
+        footer{
+        grid-area: footerIn;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        text-align: center;
+        row-gap: 2rem;
+    }
+    footer div p{
+        font-size: 1rem;
+    }
+    .followUs{
+        text-align: center;
+        text-justify: center;
+        top:0;
+        right: 0;
+        padding: 1rem;
+    }
+}
