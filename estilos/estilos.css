@@ -173,10 +173,10 @@ footer{
     
 }
 .textoNosotros{
-    background-color: #d6bcec9f;
-    opacity: 1;
+    background: rgb(183,182,148);
+    background: radial-gradient(circle, rgba(183, 182, 148, 0.515) 0%, rgba(196, 149, 238, 0.679) 35%, rgba(0, 213, 255, 0.718) 100%);
 	width: auto;
-    border-color: #c495ee;
+    border-color: silver;
     border-width: 3.2rem;
     border-style: outset;
 }
