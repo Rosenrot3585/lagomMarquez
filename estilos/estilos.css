@@ -173,10 +173,10 @@ footer{
     
 }
 .textoNosotros{
-    background-color: #d6bcec9f;
-    opacity: 1;
+    background: rgb(183,182,148);
+    background: radial-gradient(circle, rgba(183, 182, 148, 0.515) 0%, rgba(196, 149, 238, 0.679) 35%, rgba(0, 213, 255, 0.718) 100%);
 	width: auto;
-    border-color: #c495ee;
+    border-color: silver;
     border-width: 3.2rem;
     border-style: outset;
 }
@@ -476,14 +476,12 @@ div[class*="producto-"]{
     height:5rem;
     font-size: 2rem;
     margin: 2rem;
+    align-self: center;
 }
 .botonMiCuenta:hover{
     border-radius: 1rem;
     background-color:#C1433F;
     color: #b7b694;
-    width: 24rem;
-    height:5rem;
-    font-size: 2rem;
 }
 .textoContacto{
     text-align: center;
@@ -495,26 +493,36 @@ div[class*="producto-"]{
     font-size: 2rem;
 }
 .formularioDeContacto{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
     font-size: 1.5rem;
     padding: 1rem;
-    width: 100%;
-    text-align: center;
+    width: 50%;
+    text-align: start;
+    justify-content: center;
     background-color:#4E9AC6;
 }
-.formularioDeContacto div{
-    width: 100%;
+.formularioDeContacto input{
+    width: 50%;
+    align-self: center;
+padding: 0.5rem;
+margin: 0.5rem;
+}
+.formularioDeContacto label{
     font-weight: bold;
+    width: 80%;
+    align-self: center;
+    text-align: center;
 }
 .formularioDeContacto textarea{
     font-size: 2rem;
     padding: 1rem;
-    width: 80%;
     margin: 2rem;
 }
 .formularioDeContacto h5{
     font-size: 2rem;
     padding: 1.5rem;
-    width: 100%;
 
 }
 .newsletter{
@@ -524,8 +532,9 @@ div[class*="producto-"]{
     color: darkgrey;
 }
 .motivoConsulta{
-    margin-top: 5rem;
     padding: 1rem;
+    width: 40%;
+    align-self: center;
 }
 .labelMotivoConsulta{
     margin-top: 5rem;
@@ -580,7 +589,7 @@ div[class*="producto-"]{
         text-align: center;
         font-size: 2rem;
     }
-    /* HOLA MOOOR! te dejo un comentario ;) */
+    
     .parallax{
         overflow:hidden;
 	    background-attachment: fixed;
@@ -664,6 +673,34 @@ div[class*="producto-"]{
         height: 50%;
         width: 50%;
     }
+    .formularioDeContacto{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        font-size: 1.5rem;
+        padding: 1rem;
+        width: 100%;
+        text-align: start;
+        justify-content: center;
+        background-color:#4E9AC6;
+    }
+    .formularioDeContacto label{
+            font-weight: bold;
+            width: 80%;
+            align-self: center;
+            text-align: center;
+            font-size: 1.5rem;
+    }
+
+    .botonMiCuenta{
+        border-radius: 1rem;
+        width: 24rem;
+        height:5rem;
+        font-size: 1.5rem;
+        margin: 2rem;
+        align-self: center;
+    }
+        
 
 }
 @media screen and (max-width: 500px){ 
@@ -679,21 +716,10 @@ div[class*="producto-"]{
     
     .parallax{
         overflow:hidden;
-	    background-attachment: fixed;
-	    background-position: center;
-	    background-repeat: no-repeat;
-	    background-size:  cover;
-	    height:20rem;
-	    max-width: 100%;
-	    position: relative;
         align-content: center;
         justify-content: center;
     }
     .parallax__titulo{
-	    color:#d34a45;
-	    font-size: 2.5rem;
-	    text-align: center;
-	    top:30%;
         font-family: 'Lily Script One', cursive;
         /*font-family: 'Palanquin Dark', sans-serif;*/
         font-style: bold;

@@ -13,6 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Birthstone+Bounce:wght@400;500&family=Cedarville+Cursive&family=Gothic+A1:wght@300;400;800&family=Handlee&family=Klee+One:wght@400;600&family=Leckerli+One&family=Lily+Script+One&family=Nanum+Gothic:wght@400;700;800&family=Palanquin+Dark:wght@400;500;600;700&family=Palanquin:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -21,7 +22,7 @@
         <header>
             <div class="header-logo">
                 <a href="../index.html"><img src="../multimedia/logo.png" alt="Logo Lagom"
-                        class="header-logo__image"></a>
+                    class="header-logo__image--animated"></a>
                 <!--redimensionar esta imagen por el logo-->
             </div>
             <div class="header-menu">
@@ -66,21 +67,21 @@
                         <option value="">Sugerencia</option>
                     </select>
                     <h5>Completa todos los campos a continuación:</h5>
-                    <div>
-                        <label for="nombre">Nombre</label>
-                        <input type="text" name="nombre" placeholder="Escribe tu nombre aquí" required="yes">
-                        <label for="apellido"></label>Apellido
-                        <input type="text" name="apellido" placeholder="Escribe tu apellido aquí" required="yes">
-                    </div>
-                    <div>
-                        <label for="telefono">Teléfono</label>
-                        <input type="tel" name="telefono" placeholder="Escrie tu n° de telf." required="yes">
-                        <label for="correo">Dirección de email</label>
-                        <input type="email" name="correo" placeholder="Escribe tu email" required="yes">
-                    </div>
-                    <div>
-                        <textarea rows="10" cols="80" placeholder="Ingresa tu consulta" required="yes"></textarea>
-                    </div>
+
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" placeholder="Escribe tu nombre aquí" required="yes">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" placeholder="Escribe tu apellido aquí" required="yes">
+
+
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" name="telefono" placeholder="Escrie tu n° de telf." required="yes">
+                    <label for="correo">Dirección de email</label>
+                    <input type="email" name="correo" placeholder="Escribe tu email" required="yes">
+
+
+                    <textarea rows="10" cols="80" placeholder="Ingresa tu consulta" required="yes"></textarea>
+
                     <!--Suscripción al Newsletter semanal-->
                     <div class="newsletter">
                         <input type="checkbox" name="newsletter" class="newsletter" id="1">Deseo recibir el newsletter
