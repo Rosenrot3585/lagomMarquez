@@ -32,15 +32,6 @@ body{
         url(../multimedia/linen_grey.jpg);
     background-repeat:repeat-x repeat-y;
     background-size: auto;
-    display:grid;
-    grid-template-columns: 1fr 2fr 2fr;
-    grid-template-rows: 0.2fr 2fr 2fr 2fr 0.2fr;
-    grid-template-areas:
-    "headerInd headerInd headerInd"
-    "mainIn mainIn mainIn"
-    "mainIn mainIn mainIn"
-    "mainIn mainIn mainIn"
-    "footerIn footerIn footerIn";
 }
 .body--noHome{
     /*background-color:#b7b694;*/
@@ -60,9 +51,9 @@ header{
     flex-direction: row;
     padding: 1rem;
     position: sticky;
-    width:100%;
+    width:auto;
     top:0;
-    height:9rem;
+    height:10rem;
     z-index: 9999;
     background-color:  #b7b694;
 }
@@ -89,11 +80,16 @@ header{
 }
 .header-menu{
     align-self:center;
-    justify-items: center;
+    justify-content: end;
+    flex-basis: 0%;
+}
+.navegacion{
+    width: auto;
 }
 footer{
     grid-area: footerIn;
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
@@ -101,14 +97,21 @@ footer{
     size-adjust: 100%;
     color: #b7b694;
     padding: 1.5rem;  
-    width:100%;
+    width:auto;
+}
+footer div p{
+    font-size: 1rem;
+}
+.creadoPor{
+    width: auto;
 }
 
 .menu li{
     font-family: 'Nanum Gothic', sans-serif;
     display: inline-block;
     position: relative;  
-    font-size: 2rem; 
+    font-size: 1.5rem;
+    align-self: flex-end; 
 }
 .menu li a:hover{
     background-color: #d34a4583;
@@ -152,10 +155,6 @@ footer{
 }
 .noHomeBody-mainProduct{
     grid-area: mainNoH;
-}
-.noHomeBody-mainGallery{
-    grid-area: mainNoH;
-    background-color:silver;
 }
 .nuestraHistoria{
     margin: 1rem 3.5rem;
@@ -226,17 +225,18 @@ footer{
 .grid-gallery{
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(3,25rem);
-    grid-template-rows: repeat(4,10rem);
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,0.5fr);
     grid-template-areas:
         "item1 item2 item2"
         "item3 item4 item7"
-        "item5 item6 item11"
-        "item8 item9 item10";
+        "item5 item6 item7"
+        "item8 item9 item9";
     height: auto;
     width: auto;
     overflow: hidden;
-    margin: 5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
     gap: 1.5rem;
 }
 .grid-gallery div{
@@ -284,8 +284,8 @@ height: auto;
 }
 .mensajePagina{
     height: auto;
-    font-family:'Nanum Gothic', sans-serif;
-    margin: 2.5rem;
+    font-family: 'Lily Script One', cursive;
+    margin: 2.5rem 0;
     text-align: center;
     font-size: 3rem;
     animation: rotateIn; /* referring directly to the animation's @keyframe declaration */
@@ -317,7 +317,7 @@ height: auto;
 	left: 10%;
 	position: absolute;
 	text-align: center;
-	top:30%;
+	top:40%;
 	width: 80%;
     font-family: 'Lily Script One', cursive;
     /*font-family: 'Palanquin Dark', sans-serif;*/
@@ -362,6 +362,9 @@ height: auto;
 footer div p{
     font-size: 1.1rem; 
 
+}
+.siguenos{
+    width: auto;
 }
 .followUs{
     position: relative;
@@ -543,49 +546,23 @@ margin: 0.5rem;
 }
 
 
-@media screen and (max-width: 768px){ 
-    .homeBody{
-        display:grid;
-        grid-template-columns: 2fr 0.2fr;
-        grid-template-rows: 0.2fr 2fr 2fr 2fr 0.2fr;
-        grid-template-areas:
-        "headerInd headerInd"
-        "mainIn mainIn"
-        "mainIn mainIn"
-        "mainIn mainIn"
-        "footerIn footerIn";
-    }
-    header{
-        grid-area: headerInd;
-        display: flex;
-        align-content: space-between;
-        justify-content: space-between;
-        flex-direction: column;
+@media screen and (max-width: 768px){
+    .navegacion{
+        width: auto;
         flex-wrap: nowrap;
+    } 
+    .header-logo {
+        width: auto;
     }
-    .header-logo__image--animated {
-        animation: jackInTheBox; /* referring directly to the animation's @keyframe declaration */
-        animation-duration: 3s; /* don't forget to set a duration! */
-        width:8rem;
-        height: 4rem;
-        margin: 0px;
-    }
-    .header-logo__image{
-        width: 8rem;
-        height: 4rem;
-        margin: 0px;
-    }
-    .header-menu{
-        justify-items: stretch;
-        flex-wrap: nowrap;
-    }
-    .menu li{
-        font-size: 1.8rem;
+    .navegacionBarra{
+        width: auto;
+    } 
+    footer div{
+        width: 50vw;
     }
     .mensajePagina{
         height: fit-content;
         font-family: 'Lily Script One', cursive;
-        margin: 2.5rem;
         text-align: center;
         font-size: 2rem;
     }
@@ -606,8 +583,7 @@ margin: 0.5rem;
 	    color:#d34a45;
 	    font-size: 2.5rem;
 	    text-align: center;
-	    top:30%;
-        font-family: 'Lily Script One', cursive;
+	    font-family: 'Lily Script One', cursive;
         /*font-family: 'Palanquin Dark', sans-serif;*/
         font-style: bold;
         font-weight: 800;
@@ -649,11 +625,7 @@ margin: 0.5rem;
         font-weight: bold;
         text-shadow: 0px 0.2rem 0.5rem #000000;
     }
-    .nuestraHistoria{
-    }
-    .nuestrasCategorias{
-    }
-    .textoNosotros{
+        .textoNosotros{
         border-width: 1rem;
     }
     .textoNosotros__titulo{
@@ -703,13 +675,23 @@ margin: 0.5rem;
         
 
 }
-@media screen and (max-width: 500px){ 
-    .menu li{
-        font-size: 1.2rem;}
+@media screen and (max-width: 500px){
+    .navegacion{
+        width: auto;
+        flex-wrap: nowrap;
+    } 
+    .header-logo {
+        width: auto;
+    }
+    .header-logo__image{
+        margin-left: 0;
+    }
+    .navegacionBarra{
+        width: auto;
+    }
     .mensajePagina{
         height: fit-content;
         font-family: 'Lily Script One', cursive;
-        margin-top: 2.5rem;
         text-align: center;
         font-size: 1.5rem;
     }
@@ -737,15 +719,7 @@ margin: 0.5rem;
         font-family: 'Lily Script One', cursive;
         font-size: 1.7rem;
     }
-        footer{
-        grid-area: footerIn;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column;
-        text-align: center;
-        row-gap: 2rem;
-    }
+    
     footer div p{
         font-size: 1rem;
     }
