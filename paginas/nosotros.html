@@ -7,109 +7,183 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lagom - Contacto</title>
     <link rel="shortcut icon" href="../multimedia/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../estilos/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Birthstone+Bounce:wght@400;500&family=Cedarville+Cursive&family=Gothic+A1:wght@300;400;800&family=Handlee&family=Klee+One:wght@400;600&family=Leckerli+One&family=Lily+Script+One&family=Nanum+Gothic:wght@400;700;800&family=Palanquin+Dark:wght@400;500;600;700&family=Palanquin:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
-<body>
-    <div class="body--noHome">
+<body class="homeBody">
+    <div class="container-fluid">
         <!--Encabezado presente en todas las páginas del sitio, excepto index, cambia el logo-->
-        <header>
-            <div class="header-logo">
+        <header class="row navegacion">
+            <div class="col-xs-10 col-md-6 header-logo">
                 <a href="../index.html"><img src="../multimedia/logo.png" alt="Logo Lagom"
                         class="header-logo__image"></a>
                 <!--redimensionar esta imagen por el logo-->
             </div>
-            <div class="header-menu">
-                <nav class="navegacion">
-                    <ul class="menu">
-                        <li>
-                            <a href="../index.html">Inicio</a>
-                        </li>
-                        <li>
-                            <a href="productos.html">Productos</a>
-                        </li>
-                        <li>
-                            <a href="nosotros.html">Nosotros</a>
-                        </li>
-                        <li>
-                            <a href="galeria.html">Galería</a>
-                        </li>
-                        <li>
-                            <a href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
+            <div class="col-xs-2 col-md-6 navegacionBarra">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <div class="container">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse  header-menu" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto menu">
+                                <li class="nav-item">
+                                    <a href="../index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="productos.html">Productos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="nosotros.html">Nosotros</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="galeria.html">Galería</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contacto.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </nav>
             </div>
         </header>
         <!--Fin del encabezado-->
-        <main class="noHomeBody-mainNosotros">
-            <div class="mensajePagina">
+        <main class="row">
+            <div class="col-12 mensajePagina">
                 <h1>Nosotros</h1>
             </div>
-            <div class="nuestraHistoria">
-                <div class="textoNosotros">
-                    <h3 class="textoNosotros__titulo">Nuestra Historia</h3>
-                    <p>¡Hola! Soy Noelia Daumes, además de ser la diseñadora creativa de <span
-                            class=" lagomBold">Lagom</span>, soy madre, artista,
-                        optimista, emprendedora y amante de los gatos.
-                    </p>
-                    <p><span class="lagomBold">Lagom </span>nace en medio de la pandemia, por la necesidad de canalizar
-                        mis instintos artísticos, haciéndome sentir
-                        viva, entusiasmada, motivada, enérgica, en momentos tan agobiantes como los que atravesaba el
-                        mundo entero en ese momento.
-                    </p>
-                    <p>Por ahora <span class="lagomBold">Lagom </span>es un proyecto personal con ayuda familiar, mi
-                        intención es incorporar más personas que compartan los mismos intereses y contribuir mutuamente
-                        a mejorar la
-                        calidad de vida del otro.
-                    </p>
-                    <p>En <span class="lagomBold">Lagom </span>buscamos contribuir en la reduccióm de consumo de
-                        plástico,
-                        fomentando un consumo responsable e inteligente. Juntos podemos cuidar el planeta.
-                    </p>
-                </div>
-            </div>
-            <div class="nuestrasCategorias">
-                <div class="textoNosotros">
-                    <h3 class="textoNosotros__titulo">¿Qué hacemos?</h3>
-                    <p>Fomentando el consumo razonable y para proteger el planeta, creamos productos únicos y
-                        originales, cada pieza es irrepetible.
-                        Tenemos 2 grandes categorías:
-                    </p>
-                    <p>
-                    <div class="categorias">
-                        <div class="categorias-textil">
-                            <p>TEXTIL</p>
-                            <p>
-                                Los estampados sobre telas son hechos a mano con pintura no tóxica ni probada en
-                                ánimales.
-                                Las estampas las hacemos con moldes tallados en madera, con diseños originales, creados
-                                por nostros. Aunque en menor escala,
-                                también utilizamos la técnica de serigrafiado para crer prendas únicas.
+            <div class="card">
+                <div class="row g-0">
+                    <div class="col-5 col-sm-4 nuestraHistoria">
+                        <img src="../multimedia/coser2.jpg" class="img-fluid w-100" alt="card-horizontal-image">
+                    </div>
+                    <div class="col-7 col-sm-8">
+                        <div class="card-body textoNosotros">
+                            <h5 class="card-title textoNosotros__titulo">¿Quiénes somos?</h5>
+                            <p class="card-text">
+                            <p>¡Hola! Soy Noelia Daumes, además de ser la diseñadora creativa de <span
+                                    class=" lagomBold">Lagom</span>, soy madre, artista,
+                                optimista, emprendedora y amante de los gatos.
                             </p>
-                        </div>
-                        <div class="categorias-papel">
-                            <p>LIBRERIA</p>
-                            <p>
-                                Cuadernos, anotadores, planers, también de diesño propio impresos en papel reciclado y
-                                pegados a mano.
+                            <p>Por ahora <span class="lagomBold">Lagom </span>es un proyecto personal con ayuda
+                                familiar, mi
+                                intención es incorporar más personas que compartan los mismos intereses y contribuir
+                                mutuamente
+                                a mejorar la
+                                calidad de vida del otro.
                             </p>
-
+                            </p>
                         </div>
                     </div>
+                </div>
+                <div class="card">
+                    <div class="row g-0">
+                        <div class="col-7 col-sm-8">
+                            <div class="card-body textoNosotros">
+                                <h5 class="card-title textoNosotros__titulo">Nuestra Historia</h5>
+                                <p class="card-text">
+                                <p><span class="lagomBold">Lagom </span>nace en medio de la pandemia, por la necesidad
+                                    de
+                                    canalizar
+                                    mis instintos artísticos, haciéndome sentir
+                                    viva, entusiasmada, motivada, enérgica, en momentos tan agobiantes como los que
+                                    atravesaba el
+                                    mundo entero en ese momento.
+                                </p>
+                                <p>En <span class="lagomBold">Lagom </span>buscamos contribuir en la reduccióm de
+                                    consumo de
+                                    plástico,
+                                    fomentando un consumo responsable e inteligente. Juntos podemos cuidar el planeta.
+                                </p>
+                                </p>
+                                <p class="card-text"><small class="text-muted">Noelia Daumes - Abril 2021</small></p>
+                            </div>
+                        </div>
+                        <div class="col-5 col-sm-4 nuestraHistoria">
+                            <img src="../multimedia/coser.png" class="img-fluid w-100" alt="card-horizontal-image">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="row g-0">
+                        <div class="col-5 col-sm-4 nuestraHistoria">
+                            <img src="../multimedia/coser.png" class="img-fluid w-100" alt="card-horizontal-image">
+                        </div>
+                        <div class="col-7 col-sm-8">
+                            <div class="card-body textoNosotros">
+                                <h5 class="card-title textoNosotros__titulo">¿Qué hacemos?</h5>
+                                <p class="card-text">
+                                <p>Nuestro principal objetivo es fomentar el consumo razonable, concientizar y preparar
+                                    a los usuarios para proteger el planeta.</p>
+                                <p>Para ello creamos productos ecológicos únicos y originales, cada pieza es irrepetible.
+                    
+                                </p>
+                                </p>
+                                <p class="card-text"><small class="text-muted">Noelia Daumes - Abril 2021</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="row g-0">
+                        <div class="col-7 col-sm-8">
+                            <div class="card-body textoNosotros">
+                                <h5 class="card-title textoNosotros__titulo">Nuestra Historia</h5>
+                                <p class="card-text">
+                                <div class="categorias">
+                                    <div class="categorias-textil">
+                                        <p>TEXTIL</p>
+                                        <p>
+                                            Los estampados sobre telas son hechos a mano con pintura no tóxica ni
+                                            probada en
+                                            ánimales.
+                                            Las estampas las hacemos con moldes tallados en madera, con diseños
+                                            originales,
+                                            creados
+                                            por nostros. Aunque en menor escala,
+                                            también utilizamos la técnica de serigrafiado para crer prendas únicas.
+                                        </p>
+                                    </div>
+                                    <div class="categorias-papel">
+                                        <p>LIBRERIA</p>
+                                        <p>
+                                            Cuadernos, anotadores, planers, también de diesño propio impresos en papel
+                                            reciclado y
+                                            pegados a mano.
+                                        </p>
+                                    </div>
+                                </div>
+                                </p>
+                                <p class="card-text"><small class="text-muted">Noelia Daumes - Abril 2021</small></p>
+                            </div>
+                        </div>
+                        <div class="col-5 col-sm-4 nuestraHistoria">
+                            <img src="../multimedia/coser.png" class="img-fluid w-100" alt="card-horizontal-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
-        <footer>
-            <div>
+        <footer class="row">
+            <div class="col-xs-3 col-md-5 creadoPor">
                 <p>Lagom Estudio - Derechos Registrados</p>
                 <p>Desarrollado por: Rosenrot3585 2022</p>
             </div>
-            <div>
+            <div class="col-xs-9 col-md-7 siguenos">
                 <p class="followUs">Síguenos: </p>
                 <!--Redes Sociales-->
                 <nav class="social-Network">
