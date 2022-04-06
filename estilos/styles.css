@@ -1,0 +1,14 @@
+footer {
+  grid-area: footerIn;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: #000000;
+  size-adjust: 100%;
+  color: #b7b694;
+  padding: 1.5rem;
+  width: auto; }
+  footer div p {
+    font-size: 1rem; }
