@@ -212,7 +212,7 @@ width: 100%;
 height: auto;
 }
 .grid-gallery div:hover{
-    width: 150%;
+    width: 120%;
     height: auto;
     overflow: visible;
     z-index: 9999;
@@ -388,7 +388,15 @@ div[class*="producto-"]{
 .producto__miniatura img{
     width: 20rem;
     height: 20rem;
+    transition: width 2s;
 }
+.producto__miniatura img:hover{
+    width: 25rem;
+    height: 25rem;
+    overflow: visible;
+    z-index: 9999;
+    border: solid black 3px;
+    }
 
 
 .tituloTabla{
