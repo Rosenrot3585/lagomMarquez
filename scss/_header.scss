@@ -1,0 +1,61 @@
+/*HEADER*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 1rem;
+    position: sticky;
+    width: auto;
+    top: 0;
+    height: 10rem;
+    z-index: 9999;
+    background-color: $colorPrincipal;
+}
+
+.header-logo {
+    width: auto;
+}
+
+.header-logo__image {
+    margin-left: 100px;
+    width: 10rem;
+    height: 5rem;
+}
+
+.header-logo__image--animated {
+    animation: jackInTheBox;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 3s;
+    /* don't forget to set a duration! */
+    margin-left: 100px;
+    width: 10rem;
+    height: 5rem;
+}
+
+.header-login {
+    position: fixed;
+    top: 15px;
+    right: 110px;
+}
+
+.header-login__LinkImg {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.header-menu {
+    align-self: center;
+    justify-content: end;
+    flex-basis: 0%;
+}
+
+.navegacion {
+    width: auto;
+}
+
+
+.navegacionBarra {
+    width: auto;
+}

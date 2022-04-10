@@ -1,0 +1,16 @@
+/*RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+/*Importando Hojas de Estilo*/
+
+@import "variables.scss";
+@import "common.scss";
+@import "header.scss";
+@import "footer.scss";
+@import "index.scss";
+@import "responsive.scss";

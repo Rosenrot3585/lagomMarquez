@@ -1,0 +1,49 @@
+footer {
+    grid-area: footerIn;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #000000;
+    size-adjust: 100%;
+    color: #b7b694;
+    padding: 1.5rem;
+    width: auto;
+
+    div {
+        p {
+            font-size: 1rem
+        }
+    }
+}
+
+.siguenos {
+    width: auto;
+}
+
+.followUs {
+    position: relative;
+    top: 1.5rem;
+    right: 5rem;
+}
+
+.social-Network ul {
+    display: inline-block;
+
+    li {
+        a {
+            img {
+                width: 24px;
+                height: 24px;
+            }
+
+            &:hover {
+                background-color: black;
+            }
+        }
+    }
+}
+.creadoPor {
+    width: auto;
+}

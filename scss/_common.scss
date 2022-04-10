@@ -1,0 +1,46 @@
+/*COMMON STYLES*/
+
+html {
+    font-size: 62.5%;
+    /* cambiamos la etiqueta raiz, y ahora se cuenta de 10px en 10px. */
+}
+
+body {
+    background-color: $colorPrincipal;
+    font-size: 100%;
+    line-height: 1.3;
+    font-family: $letraCuerpo;
+    text-align: justify;
+}
+
+.menu li {
+    font-family: $letraCuerpo;
+    display: inline-block;
+    position: relative;
+    font-size: 1.5rem;
+    align-self: flex-end;
+    a{
+        text-decoration: none;
+        color: $colorSecundario;
+        margin: 0 0.5rem 0 0.5rem;
+        &:hover{
+            background-color: #d34a4583;
+            background-size: 1.2rem;
+            color: $colorPrincipal;
+            font-weight: bold;
+        }
+    }
+}
+
+.mensajePagina {
+    height: auto;
+    font-family: $letraTitulosPrincipales;
+    margin: 2.5rem 0;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.lagomBold {
+    font-family: $letraTitulosPrincipales;
+    font-size: 2.2rem;
+}
