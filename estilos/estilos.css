@@ -1,40 +1,42 @@
 /*RESET*/
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border:0;
+    border: 0;
 }
 
 
 
 /*HTML STYLES*/
 
-html{
-    font-size: 62.5%; /* cambiamos la etiqueta raiz, y ahora se cuenta de 10px en 10px. */
+html {
+    font-size: 62.5%;
+    /* cambiamos la etiqueta raiz, y ahora se cuenta de 10px en 10px. */
 }
 
 
 
 /*COMMON STYLES*/
 
-body{
+body {
     background-color: silver;
-	font-size:100%;
-	line-height: 1.3;
+    font-size: 100%;
+    line-height: 1.3;
     font-family: 'Nanum Gothic', sans-serif;
     text-align: justify;
 
 }
-.homeBody{
+
+.homeBody {
     /*background-color:#b7b694;*/
-    background-image: 
+    background-image:
         url(../multimedia/linen_grey.jpg);
-    background-repeat:repeat-x repeat-y;
+    background-repeat: repeat-x repeat-y;
     background-size: auto;
 }
-header{
+
+header {
     grid-area: headerInd;
     display: flex;
     align-items: center;
@@ -42,42 +44,51 @@ header{
     flex-direction: row;
     padding: 1rem;
     position: sticky;
-    width:auto;
-    top:0;
-    height:10rem;
+    width: auto;
+    top: 0;
+    height: 10rem;
     z-index: 9999;
-    background-color:  #b7b694;
+    background-color: #b7b694;
 }
-.header-logo__image{
+
+.header-logo__image {
     margin-left: 100px;
-    width:10rem;
+    width: 10rem;
     height: 5rem;
 }
+
 .header-logo__image--animated {
-    animation: jackInTheBox; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 3s; /* don't forget to set a duration! */
+    animation: jackInTheBox;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 3s;
+    /* don't forget to set a duration! */
     margin-left: 100px;
-    width:10rem;
+    width: 10rem;
     height: 5rem;
 }
-.header-login{
+
+.header-login {
     position: fixed;
     top: 15px;
-    right: 110px; 
+    right: 110px;
 }
-.header-login__LinkImg{
+
+.header-login__LinkImg {
     width: 1.2rem;
-    height: 1.2rem; 
+    height: 1.2rem;
 }
-.header-menu{
-    align-self:center;
+
+.header-menu {
+    align-self: center;
     justify-content: end;
     flex-basis: 0%;
 }
-.navegacion{
+
+.navegacion {
     width: auto;
 }
-footer{
+
+footer {
     grid-area: footerIn;
     display: flex;
     flex-wrap: nowrap;
@@ -87,109 +98,120 @@ footer{
     background-color: #000000;
     size-adjust: 100%;
     color: #b7b694;
-    padding: 1.5rem;  
-    width:auto;
-}
-footer div p{
-    font-size: 1rem;
-}
-.creadoPor{
+    padding: 1.5rem;
     width: auto;
 }
 
-.menu li{
+footer div p {
+    font-size: 1rem;
+}
+
+.creadoPor {
+    width: auto;
+}
+
+.menu li {
     font-family: 'Nanum Gothic', sans-serif;
     display: inline-block;
-    position: relative;  
+    position: relative;
     font-size: 1.5rem;
-    align-self: flex-end; 
+    align-self: flex-end;
 }
-.menu li a:hover{
+
+.menu li a:hover {
     background-color: #d34a4583;
     background-size: 1.2rem;
-    color:#b7b694; 
+    color: #b7b694;
     font-weight: bold;
 }
 
-.menu li a{
+.menu li a {
     text-decoration: none;
     color: #C1433F;
     margin: 0 0.5rem 0 0.5rem;
 }
 
-.loginLink{
+.loginLink {
     position: fixed;
     top: 15px;
-    right: 110px;   
+    right: 110px;
 }
 
-.loginLinkImg{
+.loginLinkImg {
     width: 1.2rem;
-    height: 1.2rem;    
+    height: 1.2rem;
 }
 
 
 
 
 /* BODY STYLES*/
-.cardPropia{
+.cardPropia {
     background: none;
 }
-.textoNosotros{
+
+.textoNosotros {
     background: rgba(183, 182, 148, 0.515);
-	width: auto;
+    width: auto;
     border-color: silver;
     border-width: 0.2rem;
     border-style: outset;
 }
-.textoNosotros__titulo{
-	color:#d34a45;
-	font-size: 3rem;
-	text-align: center;
+
+.textoNosotros__titulo {
+    color: #d34a45;
+    font-size: 3rem;
+    text-align: center;
     font-family: 'Lily Script One', cursive;
-    /*font-family: 'Palanquin Dark', sans-serif;*/
     font-weight: 800;
     text-shadow: 0px 0.5rem 0.5rem #000000;
 }
-.textoNosotros p{
+
+.textoNosotros p {
     text-indent: 2rem;
     font-size: 1.5rem;
-	margin: 1rem;
-    padding:1rem;
+    margin: 1rem;
+    padding: 1rem;
     font-weight: bold;
     color: #000000;
     text-align: justify;
 }
-.textoNosotros ul li{
-    text-decoration:underline;
+
+.textoNosotros ul li {
+    text-decoration: underline;
 }
-.textoNosotros ul li p{
+
+.textoNosotros ul li p {
     text-indent: 2rem;
     font-size: 2rem;
     font-weight: 1000;
     color: #000000;
-    text-decoration:none;
+    text-decoration: none;
 }
-.categorias{
+
+.categorias {
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
     text-align: justify;
 }
-.categorias-textil{
+
+.categorias-textil {
     display: flex;
     flex-direction: row;
 }
-.categorias-papel{
+
+.categorias-papel {
     display: flex;
     flex-direction: row;
 }
-.grid-gallery{
+
+.grid-gallery {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(4,0.5fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 0.5fr);
     grid-template-areas:
         "item1 item2 item2"
         "item3 item4 item7"
@@ -202,63 +224,76 @@ footer div p{
     margin: 5rem 0;
     gap: 1.5rem;
 }
-.grid-gallery div{
-width: 100%;
-height: auto;
-overflow: hidden;
+
+.grid-gallery div {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
 }
-.grid-gallery div img{
-width: 100%;
-height: auto;
+
+.grid-gallery div img {
+    width: 100%;
+    height: auto;
 }
-.grid-gallery div:hover{
+
+.grid-gallery div:hover {
     width: 150%;
     height: auto;
     overflow: visible;
     z-index: 9999;
     border: solid black 5px;
     transform: rotate(25deg);
-    }
+}
 
-.grid-gallery-item1{
+.grid-gallery-item1 {
     grid-area: item1;
 }
-.grid-gallery-item2{
+
+.grid-gallery-item2 {
     grid-area: item2;
 }
-.grid-gallery-item3{
+
+.grid-gallery-item3 {
     grid-area: item3;
 }
-.grid-gallery-item4{
+
+.grid-gallery-item4 {
     grid-area: item4;
 }
-.grid-gallery-item5{
+
+.grid-gallery-item5 {
     grid-area: item5;
 }
-.grid-gallery-item6{
+
+.grid-gallery-item6 {
     grid-area: item6;
 }
-.grid-gallery-item7{
+
+.grid-gallery-item7 {
     grid-area: item7;
 }
-.grid-gallery-item8{
+
+.grid-gallery-item8 {
     grid-area: item8;
 }
-.grid-gallery-item9{
+
+.grid-gallery-item9 {
     grid-area: item9;
 }
 
-.mensajePagina{
+.mensajePagina {
     height: auto;
     font-family: 'Lily Script One', cursive;
     margin: 2.5rem 0;
     text-align: center;
     font-size: 3rem;
-    animation: rotateIn; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 3s; /* don't forget to set a duration! */
+    animation: rotateIn;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 3s;
+    /* don't forget to set a duration! */
 }
 
-.lagomBold{
+.lagomBold {
     font-family: 'Lily Script One', cursive;
     font-size: 2.2rem;
 }
@@ -266,25 +301,28 @@ height: auto;
 
 
 
-.parallax {margin:0 auto}
-
-.parallax{
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size:  cover;
-	height:40rem;
-	max-width: 100%;
-	position: relative
+.parallax {
+    margin: 0 auto
 }
-.parallax__titulo{
-	color:#d34a45;
-	font-size: 8rem;
-	left: 10%;
-	position: absolute;
-	text-align: center;
-	top:40%;
-	width: 80%;
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40rem;
+    max-width: 100%;
+    position: relative
+}
+
+.parallax__titulo {
+    color: #d34a45;
+    font-size: 8rem;
+    left: 10%;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    width: 80%;
     font-family: 'Lily Script One', cursive;
     /*font-family: 'Palanquin Dark', sans-serif;*/
     font-weight: 800;
@@ -292,23 +330,30 @@ height: auto;
 
 }
 
-.img-uno{background-image: url("../multimedia/parallax_mask.jpeg")}
+.img-uno {
+    background-image: url("../multimedia/parallax_mask.jpeg")
+}
 
-.img-dos{background-image: url("../multimedia/Parallax_planner.jpeg")}
+.img-dos {
+    background-image: url("../multimedia/Parallax_planner.jpeg")
+}
 
-.img-tres{background-image: url("../multimedia/Parallax.jpeg")}
+.img-tres {
+    background-image: url("../multimedia/Parallax.jpeg")
+}
 
-.parallax__texto p{
+.parallax__texto p {
     text-indent: 2rem;
     font-size: 2rem;
-	margin: 2rem
-}
-.parallax__texto{
-    padding: 4% 25%;
-	width: auto;
+    margin: 2rem
 }
 
-.dondeEstamos{
+.parallax__texto {
+    padding: 4% 25%;
+    width: auto;
+}
+
+.dondeEstamos {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -318,44 +363,48 @@ height: auto;
     text-align: center;
 }
 
-.dondeEstamos img{
+.dondeEstamos img {
     height: 150px;
     width: 200px;
 }
 
 
 
-footer div p{
-    font-size: 1.1rem; 
+footer div p {
+    font-size: 1.1rem;
 
 }
-.siguenos{
+
+.siguenos {
     width: auto;
 }
-.followUs{
+
+.followUs {
     position: relative;
     top: 1.5rem;
     right: 5rem;
 }
-.social-Network ul{
+
+.social-Network ul {
     display: inline-block;
 }
 
-.social-Network ul li a img{
+.social-Network ul li a img {
     width: 24px;
     height: 24px;
-    }
-
-    /*revisar porque no se fija dnde se quiere cuando se usa top o bottom*/
-    
-
-.detalleProducto{
-font-size: 1.5rem;
-margin: 0.2rem;
-padding:0.2rem;
-width: 100%;
 }
-.encabezados{
+
+/*revisar porque no se fija dnde se quiere cuando se usa top o bottom*/
+
+
+.detalleProducto {
+    font-size: 1.5rem;
+    margin: 0.2rem;
+    padding: 0.2rem;
+    width: 100%;
+}
+
+.encabezados {
     background-color: #C1433F;
     border-width: 2px 2px 2px 0px;
     font-size: 2.5rem;
@@ -363,9 +412,10 @@ width: 100%;
     color: #b7b694;
     text-align: center;
     text-justify: center;
-    width:auto;
+    width: auto;
 }
-div[class*="producto-"]{
+
+div[class*="producto-"] {
     height: auto;
     font-size: 2rem;
     align-items: center;
@@ -375,56 +425,63 @@ div[class*="producto-"]{
     padding: 2rem;
 }
 
-.producto__nombre{
-    text-align: center;
-}
-.producto__categoria{
-    text-align: center;
-}
-.producto__colores{
+.producto__nombre {
     text-align: center;
 }
 
-.producto__miniatura img{
+.producto__categoria {
+    text-align: center;
+}
+
+.producto__colores {
+    text-align: center;
+}
+
+.producto__miniatura img {
     width: 20rem;
     height: 20rem;
 }
 
 
-.tituloTabla{
+.tituloTabla {
     display: block;
-    color:#d34a45;
-	font-size: 5rem;
-	text-align: center;
-	font-family: 'Lily Script One', cursive;
+    color: #d34a45;
+    font-size: 5rem;
+    text-align: center;
+    font-family: 'Lily Script One', cursive;
     font-style: bold;
     font-weight: 800;
     text-shadow: 0px 2px 5px #000000;
     margin: 2rem;
 }
-.botonMiCuenta{
+
+.botonMiCuenta {
     border-radius: 1rem;
     width: 24rem;
-    height:5rem;
+    height: 5rem;
     font-size: 2rem;
     margin: 2rem;
     align-self: center;
 }
-.botonMiCuenta:hover{
+
+.botonMiCuenta:hover {
     border-radius: 1rem;
-    background-color:#C1433F;
+    background-color: #C1433F;
     color: #b7b694;
 }
-.textoContacto{
+
+.textoContacto {
     text-align: center;
 }
-.textoContacto p{
+
+.textoContacto p {
     text-align: center;
     padding: 0;
     margin: 0;
     font-size: 2rem;
 }
-.formularioDeContacto{
+
+.formularioDeContacto {
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -433,106 +490,120 @@ div[class*="producto-"]{
     width: 50%;
     text-align: start;
     justify-content: center;
-    background-color:#4E9AC6;
+    background-color: #4E9AC6;
 }
-.formularioDeContacto input{
+
+.formularioDeContacto input {
     width: 50%;
     align-self: center;
-padding: 0.5rem;
-margin: 0.5rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
 }
-.formularioDeContacto label{
+
+.formularioDeContacto label {
     font-weight: bold;
     width: 80%;
     align-self: center;
     text-align: center;
 }
-.formularioDeContacto textarea{
+
+.formularioDeContacto textarea {
     font-size: 2rem;
     padding: 1rem;
     margin: 2rem;
 }
-.formularioDeContacto h5{
+
+.formularioDeContacto h5 {
     font-size: 2rem;
     padding: 1.5rem;
 
 }
-.newsletter{
+
+.newsletter {
     font-size: 1.2rem;
     font-weight: normal;
     text-align: center;
     color: darkgrey;
 }
-.motivoConsulta{
+
+.motivoConsulta {
     padding: 1rem;
     width: 40%;
     align-self: center;
 }
-.labelMotivoConsulta{
+
+.labelMotivoConsulta {
     margin-top: 5rem;
     padding: 1rem;
     font-size: 2rem;
 }
 
 
-@media screen and (max-width: 768px){
-    .navegacion{
+@media screen and (max-width: 768px) {
+    .navegacion {
         width: auto;
         flex-wrap: nowrap;
-    } 
+    }
+
     .header-logo {
         width: auto;
     }
-    .navegacionBarra{
+
+    .navegacionBarra {
         width: auto;
-    } 
-    footer div{
+    }
+
+    footer div {
         width: 50vw;
     }
-    .mensajePagina{
+
+    .mensajePagina {
         height: fit-content;
         font-family: 'Lily Script One', cursive;
         text-align: center;
         font-size: 5rem;
     }
-    
-    .parallax{
-        overflow:hidden;
-	    background-attachment: fixed;
-	    background-position: center;
-	    background-repeat: no-repeat;
-	    background-size:  cover;
-	    height:20rem;
-	    max-width: 100%;
-	    position: relative;
+
+    .parallax {
+        overflow: hidden;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 20rem;
+        max-width: 100%;
+        position: relative;
         align-content: center;
         justify-content: center;
     }
-    .parallax__titulo{
-	    color:#d34a45;
-	    font-size: 2.5rem;
-	    text-align: center;
-	    font-family: 'Lily Script One', cursive;
+
+    .parallax__titulo {
+        color: #d34a45;
+        font-size: 2.5rem;
+        text-align: center;
+        font-family: 'Lily Script One', cursive;
         /*font-family: 'Palanquin Dark', sans-serif;*/
         font-style: bold;
         font-weight: 800;
         text-shadow: 0px 0.2rem 0.5rem #000000;
     }
-    
-    .parallax__texto p{
+
+    .parallax__texto p {
         font-size: 1.5rem;
         font-weight: 800;
         /*text-shadow: 0px 0.5rem 5.5rem silver;*/
     }
+
     .parallax__texto {
         padding: 5%;
     }
 
-    .lagomBold{
+    .lagomBold {
         font-family: 'Lily Script One', cursive;
         font-size: 1.7rem;
     }
-    .dondeEstamos{
+
+    .dondeEstamos {
         display: grid;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -542,37 +613,43 @@ margin: 0.5rem;
         width: auto;
         row-gap: 5vh;
     }
+
     .dondeEstamos__image {
         width: 200px;
         height: 150px;
     }
 
-    .dondeEstamos div p{
+    .dondeEstamos div p {
         font-size: 1.3rem;
         line-height: 1.5rem;
         color: #d34a45;
         font-weight: bold;
         text-shadow: 0px 0.2rem 0.5rem #000000;
     }
-        .textoNosotros{
+
+    .textoNosotros {
         border-width: 1rem;
     }
-    .textoNosotros__titulo{
+
+    .textoNosotros__titulo {
         font-size: 3rem;
     }
-    .textoNosotros p{
+
+    .textoNosotros p {
         font-size: 1.5rem;
     }
-    .encabezados{
-            width: auto;
-            font-size: 1.5rem;
+
+    .encabezados {
+        width: auto;
+        font-size: 1.5rem;
     }
+
     div[class*="producto-"] {
         font-size: 1rem;
         padding: 1rem;
     }
-    
-    .formularioDeContacto{
+
+    .formularioDeContacto {
         display: flex;
         flex-direction: column;
         margin: auto;
@@ -581,137 +658,159 @@ margin: 0.5rem;
         width: 100%;
         text-align: start;
         justify-content: center;
-        background-color:#4E9AC6;
-    }
-    .formularioDeContacto label{
-            font-weight: bold;
-            width: 80%;
-            align-self: center;
-            text-align: center;
-            font-size: 1.5rem;
+        background-color: #4E9AC6;
     }
 
-    .botonMiCuenta{
+    .formularioDeContacto label {
+        font-weight: bold;
+        width: 80%;
+        align-self: center;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .botonMiCuenta {
         border-radius: 1rem;
         width: 24rem;
-        height:5rem;
+        height: 5rem;
         font-size: 1.5rem;
         margin: 2rem;
         align-self: center;
     }
-        
+
 
 }
-@media screen and (max-width: 500px){
-    .navegacion{
+
+@media screen and (max-width: 500px) {
+    .navegacion {
         width: auto;
         flex-wrap: nowrap;
-    } 
+    }
+
     .header-logo {
         width: auto;
     }
-    .header-logo__image{
+
+    .header-logo__image {
         margin-left: 0;
     }
-    .navegacionBarra{
+
+    .navegacionBarra {
         width: auto;
     }
-    .mensajePagina{
+
+    .mensajePagina {
         height: fit-content;
         font-family: 'Lily Script One', cursive;
         text-align: center;
         font-size: 1.5rem;
     }
-    
-    .parallax{
-        overflow:hidden;
+
+    .parallax {
+        overflow: hidden;
         align-content: center;
         justify-content: center;
     }
-    .parallax__titulo{
+
+    .parallax__titulo {
         font-family: 'Lily Script One', cursive;
         /*font-family: 'Palanquin Dark', sans-serif;*/
         font-style: bold;
         font-weight: 800;
         text-shadow: 0px 0.2rem 0.5rem #000000;
     }
-    
-    .parallax__texto p{
+
+    .parallax__texto p {
         font-size: 1.5rem;
         font-weight: 800;
         /*text-shadow: 0px 0.5rem 5.5rem silver;*/
-        font-family:'Nanum Gothic', sans-serif;
+        font-family: 'Nanum Gothic', sans-serif;
     }
-    .lagomBold{
+
+    .lagomBold {
         font-family: 'Lily Script One', cursive;
         font-size: 1.7rem;
     }
-    
-    footer div p{
+
+    footer div p {
         font-size: 1rem;
     }
-    .followUs{
+
+    .followUs {
         text-align: center;
         text-justify: center;
-        top:0;
+        top: 0;
         right: 0;
         padding: 1rem;
     }
-    .nuestraHistoria{
+
+    .nuestraHistoria {
         background-image: none;
     }
-    .textoNosotros{
+
+    .textoNosotros {
         border-style: none;
         background-color: rgba(192, 192, 192, 0.788)
     }
-    .textoNosotros__titulo{
+
+    .textoNosotros__titulo {
         font-size: 3rem;
     }
-    .textoNosotros p{
+
+    .textoNosotros p {
         font-size: 1.5rem;
         text-align: center;
         padding: 1rem;
     }
-    .categorias-textil{
+
+    .categorias-textil {
         display: flex;
         flex-direction: column;
     }
-    .categorias-papel{
+
+    .categorias-papel {
         display: flex;
         flex-direction: column;
     }
-    .producto__nombre{
+
+    .producto__nombre {
         grid-column: 1 / 2;
 
     }
-    .producto__miniatura img{
+
+    .producto__miniatura img {
         height: 10rem;
         width: 10rem;
     }
-    .producto__miniatura{
+
+    .producto__miniatura {
         grid-column: 1 / 2;
     }
-    .producto__categoria{
+
+    .producto__categoria {
         grid-column: 2/ 3;
         text-align: center;
         justify-self: center;
     }
-    .producto__colores{
+
+    .producto__colores {
         grid-column: 3 / 5;
     }
-    .producto__masInfo{
+
+    .producto__masInfo {
         grid-column: 5 / 7;
 
     }
-    
-    .producto-1{
+
+    .producto-1 {
         grid-column: 1 / 7;
         grid-row: 2 / 3;
     }
-    .producto-2{
+
+    .producto-2 {
         grid-column: 1 / 7;
         grid-row: 3 / 4;
     }
-  
+
 
 }

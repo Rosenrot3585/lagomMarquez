@@ -1,19 +1,16 @@
-footer {
-    grid-area: footerIn;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    background-color: #000000;
-    size-adjust: 100%;
-    color: #b7b694;
-    padding: 1.5rem;
-    width: auto;
-
-    div {
-        p {
-            font-size: 1rem
-        }
-    }
+/*RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
 }
+
+/*Importando Hojas de Estilo*/
+
+@import "variables.scss";
+@import "common.scss";
+@import "header.scss";
+@import "footer.scss";
+@import "index.scss";
+@import "responsive.scss";
