@@ -12,7 +12,7 @@ html {
   /* cambiamos la etiqueta raiz, y ahora se cuenta de 10px en 10px. */ }
 
 body {
-  background-color: #b7b694;
+  /*con Map-Get()*/
   font-size: 100%;
   line-height: 1.3;
   font-family: "Nanum Gothic", sans-serif;
@@ -158,6 +158,7 @@ footer {
   font-weight: 800;
   text-shadow: 0px 0.5rem 0.5rem #000000; }
 
+/*Creamos el bucle para usar los valores del mapa*/
 .img-uno {
   background-image: url("../multimedia/parallax_mask.jpeg"); }
 
@@ -219,7 +220,14 @@ footer {
     row-gap: 5vh; }
     .dondeEstamos img {
       width: 200px;
-      height: 150px; } }
+      height: 150px; }
+  .formularioDeContacto {
+    width: 100%;
+    text-align: start; }
+    .formularioDeContacto label {
+      font-size: 1.5rem; }
+  .botonMiCuenta {
+    font-size: 1.5rem; } }
 
 @media screen and (max-width: 500px) {
   .header-logo {
@@ -237,3 +245,66 @@ footer {
     position: relative;
     top: 0;
     right: 0; } }
+
+.formularioDeContacto {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  font-size: 1.5rem;
+  padding: 1rem;
+  width: 50%;
+  text-align: start;
+  justify-content: center;
+  background-color: #4E9AC6; }
+  .formularioDeContacto input {
+    width: 50%;
+    align-self: center;
+    padding: 0.5rem;
+    margin: 0.5rem; }
+  .formularioDeContacto label {
+    font-weight: bold;
+    width: 80%;
+    align-self: center;
+    text-align: center; }
+  .formularioDeContacto textarea {
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 2rem; }
+  .formularioDeContacto h5 {
+    font-size: 2rem;
+    padding: 1.5rem; }
+
+.newsletter {
+  font-size: 1.2rem;
+  font-weight: normal;
+  text-align: center;
+  color: darkgrey; }
+
+.motivoConsulta {
+  padding: 1rem;
+  width: 40%;
+  align-self: center; }
+
+.labelMotivoConsulta {
+  margin-top: 5rem;
+  padding: 1rem;
+  font-size: 2rem; }
+
+.boton, .boton--enviar, .boton--borrar {
+  border-radius: 1rem;
+  height: 5rem;
+  width: 24rem;
+  font-size: 2rem;
+  margin: 2rem;
+  align-self: center;
+  color: white; }
+  .boton:hover, .boton--enviar:hover, .boton--borrar:hover {
+    border-radius: 1rem;
+    background-color: #C1433F;
+    color: #b7b694; }
+
+.boton--enviar {
+  background-color: green; }
+
+.boton--borrar {
+  background-color: darkgrey; }

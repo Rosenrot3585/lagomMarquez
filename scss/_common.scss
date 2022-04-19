@@ -6,11 +6,12 @@ html {
 }
 
 body {
-    background-color: $colorPrincipal;
-    font-size: 100%;
-    line-height: 1.3;
-    font-family: $letraCuerpo;
-    text-align: justify;
+    /*con Map-Get()*/
+    background-color: map-get($estilosBasicos,fondo);
+    font-size: map-get($estilosBasicos,tFuente);
+    line-height: map-get($estilosBasicos,altoLinea);
+    font-family: map-get($estilosBasicos,fuente);
+    text-align: map-get($estilosBasicos,alineacion);
 }
 
 .menu li {

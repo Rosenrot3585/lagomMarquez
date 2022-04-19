@@ -2,3 +2,15 @@ $colorPrincipal:#b7b694;
 $colorSecundario: #C1433F;
 $letraTitulosPrincipales: 'Lily Script One', cursive;
 $letraCuerpo: 'Nanum Gothic', sans-serif;
+
+$estilosBasicos: (
+    Fondo: $colorPrincipal,
+    tFuente: 100%,
+    altoLinea: 1.3,
+    fuente: $letraCuerpo,
+    alineacion: justify,
+);
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+}
