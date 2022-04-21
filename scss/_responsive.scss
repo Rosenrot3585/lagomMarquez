@@ -61,7 +61,27 @@
     .botonMiCuenta {
         font-size: 1.5rem;
         }
+        .grid-gallery {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(6, 0.5fr);
+        grid-template-areas:
+            "item1 item2 item2"
+            "item1 item9 item9"
+            "item5 item4 item6"
+            "item8 item4 item6"
+            "item8 item10 item10"
+            "item11 item3 item7";
+            @include sizes (800px, 500px);
+        padding: 0 10rem;
+        gap: 10px;
+        }
 
+        .textoNosotros {
+            padding: 5rem 9rem;
+        
+        }
 
 
 }
@@ -94,4 +114,19 @@
         right: 0;
 
     }
+    .grid-gallery {
+        padding: 0 1rem;
+        gap: 2px;
+        }
+
+        .textoNosotros {
+            padding: 5rem;
+            p{
+            font-size: 1.5rem;
+            font-weight: 700;
+            }
+            h6{
+                font-weight: 900;
+            }
+        }
 }

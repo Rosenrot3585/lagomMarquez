@@ -1,0 +1,56 @@
+.grid-gallery {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 0.5fr);
+    grid-template-areas:
+        "item1 item2 item2 item4"
+        "item1 item9 item9 item4"
+        "item5 item9 item9 item6"
+        "item8 item11 item7 item3"
+        "item8 item10 item10 item3";
+    @include sizes (1200px, 1200px);
+    overflow: hidden;
+    padding: 0 10rem;
+    margin: 50px auto;
+    gap: 10px;
+
+    div {
+        @include sizes (auto, auto);
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            @include sizes (100%, 100%);
+
+            &:hover {
+                border: solid black;
+            }
+        }
+
+        &:hover {
+            overflow: visible;
+        }
+    }
+}
+
+$gridAreaGalleria:(/*mapa gridAreaGalería*/
+item1: item1,
+item2: item2,
+item3: item3,
+item4: item4,
+item5: item5,
+item6: item6,
+item7: item7,
+item8: item8,
+item9: item9,
+item10: item10,
+item11: item11
+);
+/*Creamos el bucle para usar los valores del mapa*/
+@each $gridItem, $nombre in $gridAreaGalleria {
+    .grid-gallery-#{$gridItem} {
+        grid-area: $nombre;
+    }
+}

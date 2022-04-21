@@ -1,0 +1,23 @@
+.cardProducto{
+    border-radius: 10%;
+    border: solid $colorSecundario;
+    margin: 1rem;
+    background-color: $colorPrincipalDegradado;
+    img{
+        border-radius: 10% 10% 0 0;
+        border: solid $colorSecundario;
+    }
+    div{
+        h5{
+            font-weight: bold;
+            font-size: 24px;
+        }
+    }
+
+}
+.detalleProducto {
+    font-size: 2rem;
+    margin: 0.2rem;
+    padding: 0.2rem;
+    width: 100%;
+}
