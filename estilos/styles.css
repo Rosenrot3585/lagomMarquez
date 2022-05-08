@@ -247,7 +247,7 @@ footer {
   text-align: start;
   justify-content: center;
   background-image: url(../multimedia/contact-us.png);
-  background-repeat: no-repeat; }
+  background-repeat: round; }
   .formularioDeContacto label {
     width: 100%;
     font-size: 1.6rem;
