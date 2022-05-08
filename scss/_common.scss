@@ -5,6 +5,12 @@ html {
     /* cambiamos la etiqueta raiz, y ahora se cuenta de 10px en 10px. */
 }
 
+.homeBody {
+    background-image: url(../multimedia/linen_grey.jpg);
+    background-repeat: repeat-x repeat-y;
+    background-size: auto;
+}
+
 body {
     /*con Map-Get()*/
     background-color: map-get($estilosBasicos,fondo);
@@ -44,4 +50,10 @@ body {
 .lagomBold {
     font-family: $letraTitulosPrincipales;
     font-size: 2.2rem;
+}
+
+.mybreadcrumb {
+    font-family: $letraCuerpo;
+    font-size: 1.5rem;
+    color: $colorSecundario;
 }

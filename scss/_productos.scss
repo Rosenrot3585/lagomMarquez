@@ -1,11 +1,10 @@
 .cardProducto{
-    border-radius: 10%;
-    border: solid $colorSecundario;
+    border-radius: 5%;
+    border: solid 3px $colorSecundario;
     margin: 1rem;
     background-color: $colorPrincipalDegradado;
     img{
-        border-radius: 10% 10% 0 0;
-        border: solid $colorSecundario;
+        border-radius: 7% 7% 0 0;
     }
     div{
         h5{
@@ -16,8 +15,12 @@
 
 }
 .detalleProducto {
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 0.2rem;
     padding: 0.2rem;
     width: 100%;
+}
+
+.cardProductoBody {
+    font-size: 1.5rem;
 }

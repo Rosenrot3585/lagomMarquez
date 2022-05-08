@@ -11,15 +11,20 @@ html {
   font-size: 62.5%;
   /* cambiamos la etiqueta raiz, y ahora se cuenta de 10px en 10px. */ }
 
+.homeBody {
+  background-image: url(../multimedia/linen_grey.jpg);
+  background-repeat: repeat-x repeat-y;
+  background-size: auto; }
+
 body {
   /*con Map-Get()*/
   font-size: 100%;
   line-height: 1.3;
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   text-align: justify; }
 
 .menu li {
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   display: inline-block;
   position: relative;
   font-size: 1.5rem;
@@ -44,6 +49,11 @@ body {
 .lagomBold {
   font-family: "Lily Script One", cursive;
   font-size: 2.2rem; }
+
+.mybreadcrumb {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.5rem;
+  color: #C1433F; }
 
 /*HEADER*/
 header {
@@ -109,15 +119,13 @@ footer {
   padding: 1.5rem;
   width: auto; }
   footer div p {
-    font-size: 1rem; }
+    font-size: 2rem; }
 
 .siguenos {
   width: auto; }
 
 .followUs {
-  position: relative;
-  top: 1.5rem;
-  right: 5rem; }
+  text-align: center; }
 
 .social-Network ul {
   display: inline-block; }
@@ -131,11 +139,6 @@ footer {
   width: auto; }
 
 /*INDEX only*/
-.homeBody {
-  background-image: url(../multimedia/linen_grey.jpg);
-  background-repeat: repeat-x repeat-y;
-  background-size: auto; }
-
 .parallax {
   margin: 0 auto;
   background-attachment: fixed;
@@ -197,11 +200,9 @@ footer {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  height: 800px;
-  width: 900px;
+  height: auto;
+  width: 800px;
   margin: 5rem auto; }
-  .cardPropia img {
-    height: 750px; }
 
 .textoNosotros {
   justify-items: center;
@@ -216,7 +217,7 @@ footer {
     font-size: 2rem;
     color: #000000;
     text-align: justify;
-    font-family: "Nanum Gothic", sans-serif; }
+    font-family: "Source Sans Pro", sans-serif; }
   .textoNosotros h6 {
     color: black;
     font-size: 2rem;
@@ -232,33 +233,40 @@ footer {
   text-shadow: 0px 0.5rem 0.1rem #000000;
   margin: 0 0 5rem 0; }
 
+.nivelLectura {
+  font-weight: bold;
+  color: #C1433F; }
+
 .formularioDeContacto {
   display: flex;
   flex-direction: column;
   margin: auto;
   font-size: 1.5rem;
   padding: 1rem;
-  width: 50%;
+  width: 100%;
   text-align: start;
   justify-content: center;
   background-image: url(../multimedia/contact-us.png);
   background-repeat: no-repeat; }
-  .formularioDeContacto input {
-    align-self: center;
-    padding: 0.5rem;
-    margin: 0.5rem; }
   .formularioDeContacto label {
-    font-weight: bold;
-    width: 80%;
+    width: 100%;
+    font-size: 1.6rem;
     align-self: center;
-    text-align: center; }
+    text-align: center;
+    color: #C1433F;
+    text-shadow: 0px 0.1rem 0.1rem black; }
   .formularioDeContacto textarea {
+    height: 200px;
+    width: 100%;
     font-size: 2rem;
-    padding: 1rem;
-    margin: 2rem; }
+    padding: 0rem;
+    margin: 2rem 0 0 0; }
   .formularioDeContacto h5 {
-    font-size: 2rem;
-    padding: 1.5rem; }
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0;
+    text-align: center;
+    margin: 0.5rem 0 0 0; }
 
 .newsletter {
   font-size: 1.2rem;
@@ -267,21 +275,31 @@ footer {
   color: #302e2e; }
 
 .motivoConsulta {
-  padding: 1rem;
+  padding: 0.5rem;
   width: 40%;
   align-self: center; }
 
 .labelMotivoConsulta {
-  margin-top: 5rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #C1433F;
+  text-shadow: 0px 0.1rem 0.1rem black; }
+
+.formularioDeContacto--input {
+  align-self: center;
   padding: 1rem;
-  font-size: 2rem; }
+  margin: 0 2rem;
+  height: 2rem;
+  width: 100%; }
 
 .boton, .boton--enviar, .boton--borrar {
   border-radius: 1rem;
-  height: 5rem;
+  height: 4rem;
   width: 24rem;
   font-size: 2rem;
-  margin: 2rem;
+  margin: 0.2rem auto;
   align-self: center;
   color: white; }
   .boton:hover, .boton--enviar:hover, .boton--borrar:hover {
@@ -356,28 +374,32 @@ footer {
   grid-area: item11; }
 
 .cardProducto {
-  border-radius: 10%;
-  border: solid #C1433F;
+  border-radius: 5%;
+  border: solid 3px #C1433F;
   margin: 1rem;
   background-color: #b7b694a0; }
   .cardProducto img {
-    border-radius: 10% 10% 0 0;
-    border: solid #C1433F; }
+    border-radius: 7% 7% 0 0; }
   .cardProducto div h5 {
     font-weight: bold;
     font-size: 24px; }
 
 .detalleProducto {
-  font-size: 2rem;
+  font-size: 3rem;
   margin: 0.2rem;
   padding: 0.2rem;
   width: 100%; }
+
+.cardProductoBody {
+  font-size: 1.5rem; }
 
 @media screen and (max-width: 768px) {
   .navegacion {
     flex-wrap: nowrap; }
   footer div {
     width: 50vw; }
+    footer div p {
+      font-size: 1.5rem; }
   .mensajePagina {
     height: fit-content;
     font-size: 5rem; }
@@ -411,20 +433,42 @@ footer {
     text-align: start; }
     .formularioDeContacto label {
       font-size: 1.5rem; }
+  .cardPropia {
+    height: auto;
+    width: 800px;
+    margin: 2rem auto;
+    font-size: calc(0.5rem - ((1vw - 0.48rem))); }
+  .textoNosotros__titulo {
+    color: #C1433F;
+    font-size: 3rem;
+    text-align: center;
+    font-family: "Lily Script One", cursive;
+    font-weight: 800;
+    text-shadow: 0px 0.1rem 0.1rem #000000;
+    margin: 0 0 3rem 0; }
+  .textoNosotros {
+    padding: 2rem 6rem; }
+    .textoNosotros h6 {
+      color: black;
+      font-size: 1.8rem;
+      text-decoration: underline;
+      font-weight: bold; }
   .botonMiCuenta {
     font-size: 1.5rem; }
   .grid-gallery {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(6, 0.5fr);
+    grid-template-rows: repeat(6, 1fr);
     grid-template-areas: "item1 item2 item2" "item1 item9 item9" "item5 item4 item6" "item8 item4 item6" "item8 item10 item10" "item11 item3 item7";
-    height: 500px;
+    height: 950px;
     width: 800px;
-    padding: 0 10rem;
-    gap: 10px; }
-  .textoNosotros {
-    padding: 5rem 9rem; } }
+    padding: 0 8rem;
+    gap: 10px; } }
+
+@media screen and (max-width: 615px) {
+  .textoNosotros p {
+    font-size: 1.7rem; } }
 
 @media screen and (max-width: 500px) {
   .header-logo {
@@ -435,6 +479,8 @@ footer {
     font-size: 2rem; }
   footer {
     flex-direction: column !important; }
+    footer div p {
+      font-size: 1.5rem; }
   .followUs {
     text-align: center;
     text-justify: center;
@@ -443,12 +489,33 @@ footer {
     top: 0;
     right: 0; }
   .grid-gallery {
-    padding: 0 1rem;
-    gap: 2px; }
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 0.5rem;
+    row-gap: 10px;
+    height: 50%;
+    width: 100%; }
+  .cardPropia {
+    height: auto250px;
+    width: 100%;
+    font: 400;
+    margin: 1rem auto; }
+    .cardPropia img {
+      height: 400px; }
+  .textoNosotros__titulo {
+    color: #C1433F;
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    text-shadow: none;
+    margin: 0 0 1rem 0; }
   .textoNosotros {
-    padding: 5rem; }
+    padding: 3rem; }
     .textoNosotros p {
-      font-size: 1.5rem;
-      font-weight: 700; }
+      font-size: 1.3rem;
+      font-weight: 600; }
     .textoNosotros h6 {
+      font-size: 1.3rem;
       font-weight: 900; } }

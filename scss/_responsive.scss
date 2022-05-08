@@ -5,6 +5,10 @@
 
     footer div {
         width: 50vw;
+
+        p {
+            font-size: 1.5rem;
+        }
     }
 
     .mensajePagina {
@@ -50,22 +54,52 @@
             height: 150px;
         }
     }
+
     .formularioDeContacto {
         width: 100%;
         text-align: start;
-        label{
+
+        label {
             font-size: 1.5rem;
         }
     }
 
+    .cardPropia {
+        @include sizes (800px, auto);
+        margin: 2rem auto;
+        font-size: calc(0.5rem - ((1vw - 0.48rem)));
+    }
+
+    .textoNosotros__titulo {
+        color: $colorSecundario;
+        font-size: 3rem;
+        text-align: center;
+        font-family: $letraTitulosPrincipales;
+        font-weight: 800;
+        text-shadow: 0px 0.1rem 0.1rem #000000;
+        margin: 0 0 3rem 0;
+    }
+
+    .textoNosotros {
+        padding: 2rem 6rem;
+        h6 {
+            color: black;
+            font-size: 1.8rem;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+    }
+
     .botonMiCuenta {
         font-size: 1.5rem;
-        }
-        .grid-gallery {
+    }
+
+    .grid-gallery {
         display: grid;
         justify-content: center;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(6, 0.5fr);
+        grid-template-rows: repeat(6, 1fr);
         grid-template-areas:
             "item1 item2 item2"
             "item1 item9 item9"
@@ -73,60 +107,95 @@
             "item8 item4 item6"
             "item8 item10 item10"
             "item11 item3 item7";
-            @include sizes (800px, 500px);
-        padding: 0 10rem;
+        @include sizes (800px, 950px);
+        padding: 0 8rem;
         gap: 10px;
-        }
-
-        .textoNosotros {
-            padding: 5rem 9rem;
-        
-        }
-
-
+    }
 }
 
-@media screen and (max-width: 500px) {
-
-    .header-logo {
-        width: auto;
+@media screen and (max-width: 615px) {
+    .textoNosotros {
+        p {
+            font-size: 1.7rem;
+        }
     }
+}
 
-    .header-logo__image {
-        margin-left: 0;
-    }
+    @media screen and (max-width: 500px) {
 
-    .mensajePagina {
-        font-size: 2rem;
-    }
-
-    footer {
-        flex-direction: column !important;
-    }
-
-
-    .followUs {
-        text-align: center;
-        text-justify: center;
-        padding: 1rem;
-        position: relative;
-        top: 0;
-        right: 0;
-
-    }
-    .grid-gallery {
-        padding: 0 1rem;
-        gap: 2px;
+        .header-logo {
+            width: auto;
         }
 
-        .textoNosotros {
-            padding: 5rem;
-            p{
-            font-size: 1.5rem;
-            font-weight: 700;
+        .header-logo__image {
+            margin-left: 0;
+        }
+
+        .mensajePagina {
+            font-size: 2rem;
+        }
+
+        footer {
+            flex-direction: column !important;
+
+            div {
+                p {
+                    font-size: 1.5rem;
+                }
             }
-            h6{
+        }
+
+
+        .followUs {
+            text-align: center;
+            text-justify: center;
+            padding: 1rem;
+            position: relative;
+            top: 0;
+            right: 0;
+        }
+
+        .grid-gallery {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            padding: 0.5rem;
+            row-gap: 10px;
+            @include sizes (100%, 50%);
+        }
+
+        .cardPropia {
+            @include sizes (100%, auto + (250px));
+            font: 400;
+            margin: 1rem auto;
+
+            img {
+                height: 400px;
+            }
+        }
+
+        .textoNosotros__titulo {
+            color: $colorSecundario;
+            font-size: 2rem;
+            text-align: center;
+            font-family: $letraCuerpo;
+            font-weight: 600;
+            text-shadow: none;
+            margin: 0 0 1rem 0;
+        }
+
+
+        .textoNosotros {
+            padding: 3rem;
+
+            p {
+                font-size: 1.3rem;
+                font-weight: 600;
+            }
+
+            h6 {
+                font-size: 1.3rem;
                 font-weight: 900;
             }
         }
-}
+    }

@@ -1,38 +1,37 @@
-
 .formularioDeContacto {
     display: flex;
     flex-direction: column;
     margin: auto;
     font-size: 1.5rem;
     padding: 1rem;
-    width: 50%;
+    width: 100%;
     text-align: start;
     justify-content: center;
     background-image: url(../multimedia/contact-us.png);
     background-repeat: no-repeat;
 
-    input {
-        align-self: center;
-        padding: 0.5rem;
-        margin: 0.5rem;
-    }
-
     label {
-        font-weight: bold;
-        width: 80%;
+        width: 100%;
+        font-size: 1.6rem;
         align-self: center;
         text-align: center;
+        color: $colorSecundario;
+        text-shadow: 0px 0.1rem 0.1rem black;
     }
 
     textarea {
+        @include sizes (100%, 200px);
         font-size: 2rem;
-        padding: 1rem;
-        margin: 2rem;
+        padding: 0rem;
+        margin: 2rem 0 0 0;
     }
 
     h5 {
-        font-size: 2rem;
-        padding: 1.5rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 0;
+        text-align: center;
+        margin: 0.5rem 0 0 0;
     }
 }
 
@@ -44,26 +43,32 @@
 }
 
 .motivoConsulta {
-    padding: 1rem;
+    padding: 0.5rem;
     width: 40%;
     align-self: center;
 }
 
 .labelMotivoConsulta {
-    margin-top: 5rem;
-    padding: 1rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
     font-size: 2rem;
+    font-weight: bold;
+    color: $colorSecundario;
+    text-shadow: 0px 0.1rem 0.1rem black;
 }
 
-
-
-
+.formularioDeContacto--input {
+    align-self: center;
+    padding: 1rem;
+    margin: 0 2rem;
+    @include sizes (100%, 2rem);
+}
 
 .boton {
     border-radius: 1rem;
-    @include sizes (24rem, 5rem);
+    @include sizes (24rem, 4rem);
     font-size: 2rem;
-    margin: 2rem;
+    margin: 0.2rem auto;
     align-self: center;
     color: white;
 
